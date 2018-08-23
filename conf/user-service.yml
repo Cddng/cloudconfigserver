@@ -7,3 +7,17 @@
 #    name: user-service
 page:
   size: 5
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+#mybatis
+mybatis:
+  type-aliases-package: com.lanou.model
+  mapper-locations: classpath:mappers/*.xml
+
+#mapper
+#mappers 多个接口时逗号隔开
+mapper:
+  mappers: com.lanou.util.MyMapper
+  not-empty: false
+  identity: MYSQL
