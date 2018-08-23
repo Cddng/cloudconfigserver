@@ -1,0 +1,9 @@
+#spring:
+#  cloud:
+#    config:
+#      uri: http://localhost:8811
+#      fail-fast: true
+#  application:
+#    name: user-service
+page:
+  size: 5
